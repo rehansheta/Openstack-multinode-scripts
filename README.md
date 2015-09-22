@@ -9,13 +9,16 @@ Complete set of scripts for installing openstack juno on ubuntu 14.04 with neutr
 2. Edit the “update file /etc/network/interfaces” section of all *-1-ipadd.sh files
 
 3. Log into Controller:
-	a) Run the following script files
-		sudo ./control-1-ipadd.sh
-		sudo ./control-2-prepare.sh
-		sudo ./control-3-create-db.sh
-		sudo ./control-4-keystone.sh
-		sudo ./control-5-creatusetenant.sh
-	c) Test keystone
+
+	1. Run the following script files
+
+		1. sudo ./control-1-ipadd.sh
+		2. sudo ./control-2-prepare.sh
+		3. sudo ./control-3-create-db.sh
+		4. sudo ./control-4-keystone.sh
+		5. sudo ./control-5-creatusetenant.sh
+		
+	2. Test keystone
 		source admin-openrc.sh
 		keystone user-list
 	d) Run the following script file
