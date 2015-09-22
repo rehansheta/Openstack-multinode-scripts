@@ -19,50 +19,68 @@ Complete set of scripts for installing openstack juno on ubuntu 14.04 with neutr
 		5. sudo ./control-5-creatusetenant.sh
 		
 	2. Test keystone
-		source admin-openrc.sh
-		keystone user-list
-	d) Run the following script file
-		sudo ./control-6-glance.sh
-	e) Test glance
-		source admin-openrc.sh
-		cd images/
-		glance image-create --name "cirros-0.3.3-x86_64" --disk-format qcow2 --container-format bare --is-public True --progress < cirros-0.3.3-x86_64-disk.img
-		glance image-list
-	f) Run the following script files		
-		sudo ./control-7-nova.sh
-		sudo ./control-8-neutron.sh
-	g) Test neutron
-		source admin-openrc.sh
-		neutron ext-list
+	
+		1. source admin-openrc.sh
+		2. keystone user-list
+		
+	3. Run the following script file
+	
+		1. sudo ./control-6-glance.sh
+		
+	4. Test glance
+	
+		1. source admin-openrc.sh
+		2. cd images/
+		3. glance image-create --name "cirros-0.3.3-x86_64" --disk-format qcow2 --container-format bare --is-public True --progress < cirros-0.3.3-x86_64-disk.img
+		4. glance image-list
+		
+	5. Run the following script files
+	
+		1. sudo ./control-7-nova.sh
+		2. sudo ./control-8-neutron.sh
+	
+	6. Test neutron
+		
+		1. source admin-openrc.sh
+		2. neutron ext-list
 
 4. Log into Network:
-	a) Run the following script files
-		sudo ./net-1-ipadd.sh
-		sudo ./net-2-prepare.sh
+	
+	1. Run the following script files
+		
+		1. sudo ./net-1-ipadd.sh
+		2. sudo ./net-2-prepare.sh
 
 5. Log into Compute1:
-	a) Run the following script files
-		sudo ./com1-1-ipadd.sh
-		sudo ./com1-2-prepare.sh
+	
+	1. Run the following script files
+		
+		1. sudo ./com1-1-ipadd.sh
+		2. sudo ./com1-2-prepare.sh
 
 6. Log into Compute2:
-	a) Run the following script files
-		sudo ./com2-1-ipadd.sh
-		sudo ./com2-2-prepare.sh
+	
+	1. Run the following script files
+		
+		1. sudo ./com2-1-ipadd.sh
+		2. sudo ./com2-2-prepare.sh
 
 7. Log into Controller
-	a) Run the following script files
-		sudo ./control-9-create-net.sh
-		sudo ./control-10-horizon.sh
+	
+	1. Run the following script files
+		
+		1. sudo ./control-9-create-net.sh
+		2. sudo ./control-10-horizon.sh
 
 8. Restart all the nodes
 
 9. Test on controller
-	source admin-openrc.sh
-	keystone user-list
-	nova service-list
-	glance image-list
-	neutron agent-list
+	
+	1. source admin-openrc.sh
+	2. keystone user-list
+	3. nova service-list
+	4. glance image-list
+	5. neutron agent-list
 
 # Reference
 
