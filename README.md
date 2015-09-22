@@ -1,6 +1,8 @@
 # openstack-multinode-scripts
 
-Complete set of scripts for installing openstack juno on ubuntu 14.04 with neutron networking. It considers a 4 node cluster with a controller node, a neutron node and two compute nodes.
+Complete set of scripts for installing openstack juno on ubuntu 14.04 with neutron easily. By modifying a single configuration file according to the topology, one can deploy openstack with one controller, one neutron and multiple compute nodes (I had two compute nodes). 
+
+These scripts are written and modified mostly based on the reference links.
 
 # Instructions
 
@@ -84,4 +86,5 @@ Complete set of scripts for installing openstack juno on ubuntu 14.04 with neutr
 
 # Reference
 
+<https://github.com/vietstacker/openstack-juno-multinode-U14.04-v1/blob/master/Installation_Userguide.md>
 <http://docs.openstack.org/juno/install-guide/install/apt/content/ch_basic_environment.html>
